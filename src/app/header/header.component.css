@@ -1,0 +1,31 @@
+#menBar{
+    justify-content: start;
+}
+
+@media screen and (max-width:640px){
+  .col-sm-9{
+      width: 100%;
+  }  
+  #menBar{
+      width: 100%;
+  }
+
+} 
+
+tr {
+    line-height: 5px;
+    min-height: 5px;
+    height: 5px;
+}
+
+.active-link{
+    background-color: aliceblue;
+}
+
+.darkText{
+    color: black;
+}
+
+.activeButtonAccs{
+    font-weight: bolder;
+}

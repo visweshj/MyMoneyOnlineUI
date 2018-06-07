@@ -1,0 +1,42 @@
+<div class="page-header">
+    <h4 class="text-center">Welcome Back {{userName}} </h4>
+    <p class="text-center">Last login : {{lastLogin}}</p>
+</div>
+
+<div class="row">
+    <div id='menBar' class="col-sm-2 btn-group-vertical">
+        <a href="#" class="list-group-item list-group-item-action active-link">Account Summary</a>
+        <a href="#" class="list-group-item list-group-item-action">Deposits</a>
+        <a href="#" class="list-group-item list-group-item-action">{{eWalletId}}</a>
+        <a href="#" class="list-group-item list-group-item-action">Credit Cards</a>
+    </div>
+    <div class="col-sm-9">
+
+        <div>
+            <p class="text-left">
+                <strong class="darkText"> Account Number</strong> : {{acctNum}} </p>
+            <p class="text-left">
+                <strong class="darkText"> Available Balance</strong>: ${{acctBalance}} </p>
+        </div>
+        <nav class="navbar navbar-expand-lg active-link">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li routerLinkActive='activeButtonAccs' class="nav-item">
+                            <a class="nav-link" routerLink="activity">Recent Activity</a>
+                        </li>
+                        <li routerLinkActive='activeButtonAccs' class="nav-item">
+                            <a class="nav-link" routerLink="stmnt">Statements</a>
+                        </li>
+                        <li  routerLinkActive='activeButtonAccs' class="nav-item">
+                            <a  class="nav-link" routerLink="acctInfo">Account Info</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+                <router-outlet></router-outlet>
+        
+    </div>
+</div>
