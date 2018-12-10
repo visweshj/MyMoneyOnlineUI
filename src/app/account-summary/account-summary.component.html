@@ -1,0 +1,21 @@
+
+    <div>
+        <p class="text-left">
+            <strong class="darkText"> Account Number</strong> : {{acctNum}} </p>
+        <p class="text-left">
+            <strong class="darkText"> Available Balance</strong>: ${{acctBalance}} </p>
+    </div>
+    <nav class="navbar navbar-expand-lg active-link">
+                <ul class="navbar-nav mr-auto">
+                    <li routerLinkActive='activeButtonAccs' class="nav-item">
+                        <a class="nav-link" routerLink="activity">Recent Activity</a>
+                    </li>
+                    <li routerLinkActive='activeButtonAccs' class="nav-item">
+                        <a class="nav-link" routerLink="stmnt">Statements</a>
+                    </li>
+                    <li  routerLinkActive='activeButtonAccs' class="nav-item">
+                        <a  class="nav-link" routerLink="acctInfo">Account Info</a>
+                    </li>
+                </ul>
+    </nav>
+            <router-outlet></router-outlet>

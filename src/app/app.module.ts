@@ -10,6 +10,7 @@ import { StatmentComponent } from './statement/stmt.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import {routes} from './app.router';
+import { AccountSummaryComponent } from './account-summary/account-summary.component';
 
 
 
@@ -20,7 +21,8 @@ import {routes} from './app.router';
     HeaderComponent,
     FundTxrComponent,
     RecentActyComponent,
-    StatmentComponent
+    StatmentComponent,
+    AccountSummaryComponent
   ],
   imports: [
     BrowserModule,

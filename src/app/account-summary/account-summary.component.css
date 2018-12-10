@@ -1,5 +1,7 @@
-#menBar{
-    justify-content: start;
+tr {
+    line-height: 5px;
+    min-height: 5px;
+    height: 5px;
 }
 
 .active-link{
@@ -14,3 +16,6 @@
     font-weight: bolder;
 }
 
+#menBar{
+    justify-content: start;
+}

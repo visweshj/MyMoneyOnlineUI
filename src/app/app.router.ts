@@ -6,13 +6,16 @@ import { HeaderComponent } from './header/header.component';
 import { FundTxrComponent } from './fundTrnsfr/fundTrnsfr.component';
 import { RecentActyComponent } from './recentActivity/recent.component';
 import { StatmentComponent } from './statement/stmt.component';
+import { AccountSummaryComponent } from './account-summary/account-summary.component'
 
 
 export const router: Routes = [
     {
         path: 'accounts', component: HeaderComponent, children: [
-            { path: 'activity', component: RecentActyComponent },
-            { path: 'stmnt', component: StatmentComponent }
+            { path: 'summary', component: AccountSummaryComponent, children:[
+                { path: 'activity', component: RecentActyComponent },
+                { path: 'stmnt', component: StatmentComponent }
+            ] }    
         ]
     },
     { path: 'fundTxr', component: FundTxrComponent }
